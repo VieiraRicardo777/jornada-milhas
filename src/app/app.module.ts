@@ -19,6 +19,19 @@ import { FormBuscaComponent } from './shared/form-busca/form-busca.component';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatIconModule } from '@angular/material/icon';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { NativeDateModule } from '@angular/material/core';
+import { MatDateFnsModule } from '@angular/material-date-fns-adapter';
+import { MatMomentDateModule } from '@angular/material-moment-adapter';
+
+
+
+
+
+
+
 
 
 @NgModule({
@@ -43,7 +56,15 @@ import { MatChipsModule } from '@angular/material/chips';
     MatCardModule,
     MatButtonToggleModule,
     MatIconModule,
-    MatChipsModule
+    MatChipsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatDatepickerModule,
+    NativeDateModule,
+    MatDateFnsModule,
+    MatMomentDateModule
+
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
