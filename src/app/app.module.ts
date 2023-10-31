@@ -25,6 +25,9 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { NativeDateModule } from '@angular/material/core';
 import { MatDateFnsModule } from '@angular/material-date-fns-adapter';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
+import { ModalComponent } from './shared/modal/modal.component';
+import { MatDialogModule} from '@angular/material/dialog';
+import { BotaoControleComponent } from './shared/botao-controle/botao-controle.component';
 
 
 
@@ -45,7 +48,9 @@ import { MatMomentDateModule } from '@angular/material-moment-adapter';
     HomeComponent,
     CardBuscaComponent,
     CardDepoimentoComponent,
-    FormBuscaComponent
+    FormBuscaComponent,
+    ModalComponent,
+    BotaoControleComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +67,9 @@ import { MatMomentDateModule } from '@angular/material-moment-adapter';
     MatDatepickerModule,
     NativeDateModule,
     MatDateFnsModule,
-    MatMomentDateModule
+    MatMomentDateModule,
+    MatDialogModule
+    
 
     
   ],

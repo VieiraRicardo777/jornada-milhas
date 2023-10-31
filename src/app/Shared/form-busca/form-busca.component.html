@@ -9,7 +9,7 @@
                 </mat-button-toggle>
                 <mat-button-toggle>SOMENTE IDA</mat-button-toggle>
             </mat-button-toggle-group>
-            <mat-chip-listbox aria-label="Seleção de passagens">
+            <mat-chip-listbox (click)="openDialog()" aria-label="Seleção de passagens">
                 <mat-chip-option selected>1 Adulto</mat-chip-option>
                 <mat-chip-option>Econômica</mat-chip-option>
             </mat-chip-listbox>
@@ -30,14 +30,32 @@
                 <input matInput placeholder="Destino">
                 <mat-icon matSuffix>search</mat-icon>
             </mat-form-field>
-            <mat-form-field>
-                
-                <mat-label>Choose a date</mat-label>
-                <input matInput [matDatepicker]="picker">
-                
-                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
-                <mat-datepicker #picker></mat-datepicker>
-              </mat-form-field>
+
+
+            <mat-form-field class="input-container" appearance="outline">
+                <mat-label>Data de Ida</mat-label>
+                <input matInput [matDatepicker]="datepicker">
+                <mat-datepicker-toggle matIconSuffix [for]="datepicker"></mat-datepicker-toggle>
+                <mat-datepicker #datepicker>
+                    <mat-datepicker-actions>
+                        <button mat-button matDatepickerCancel>Cancel</button>
+                        <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+                    </mat-datepicker-actions>
+                </mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field class="input-container" appearance="outline">
+                <mat-label>Data de Volta</mat-label>
+                <input matInput [matDatepicker]="datepicker">
+                <mat-datepicker-toggle matIconSuffix [for]="datepicker"></mat-datepicker-toggle>
+                <mat-datepicker #datepicker>
+                    <mat-datepicker-actions>
+                        <button mat-button matDatepickerCancel>Cancel</button>
+                        <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+                    </mat-datepicker-actions>
+                </mat-datepicker>
+            </mat-form-field>
+            <button mat-raised-button color="primary">Buscar</button>
         </div>
     </form>
 </app-card>
