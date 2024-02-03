@@ -1,3 +1,4 @@
+//app.modulo.ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -28,13 +29,9 @@ import { MatMomentDateModule } from '@angular/material-moment-adapter';
 import { ModalComponent } from './shared/modal/modal.component';
 import { MatDialogModule} from '@angular/material/dialog';
 import { BotaoControleComponent } from './shared/botao-controle/botao-controle.component';
-
-
-
-
-
-
-
+import { HttpClientModule } from '@angular/common/http';
+import { PromocoesComponent } from './pages/home/promocoes/promocoes/promocoes.component';
+import { from } from 'rxjs';
 
 
 @NgModule({
@@ -50,7 +47,8 @@ import { BotaoControleComponent } from './shared/botao-controle/botao-controle.c
     CardDepoimentoComponent,
     FormBuscaComponent,
     ModalComponent,
-    BotaoControleComponent
+    BotaoControleComponent,
+    PromocoesComponent
   ],
   imports: [
     BrowserModule,
@@ -68,7 +66,8 @@ import { BotaoControleComponent } from './shared/botao-controle/botao-controle.c
     NativeDateModule,
     MatDateFnsModule,
     MatMomentDateModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule
     
 
     
