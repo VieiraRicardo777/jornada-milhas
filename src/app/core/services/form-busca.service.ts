@@ -6,6 +6,8 @@ import { FormGroup } from '@angular/forms';
 })
 export class FormBuscaService {
 
+  formBusca: FormGroup;
+
   constructor() { 
 
     this.formBusca = new FormGroup({
