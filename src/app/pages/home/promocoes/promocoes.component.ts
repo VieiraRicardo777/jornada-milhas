@@ -12,9 +12,9 @@ export class PromocoesComponent implements OnInit {
   constructor(private service: PromocaoService) {
   }
   ngOnInit(): void {
-    this.service.listar().subscribe(
-      res => {
-        this.promocoes = res;
+    this.service.listar().subscribe( /* método listar do serviço promoção efetua a subinscrição no método observable */
+      res => { /* Quando os dados estiverem prontos */
+        this.promocoes = res; /* Ele insere a resposta no método this.promocoes */
       }
     )
   }

@@ -37,6 +37,22 @@
           }
         }
       }
+    },
+    {
+      "type": "npm",
+      "script": "install",
+      "group": "clean",
+      "problemMatcher": [],
+      "label": "npm: install",
+      "detail": "install dependencies from package"
+    },
+    {
+      "type": "npm",
+      "script": "start",
+      "path": "jornada-milhas-api-main",
+      "problemMatcher": [],
+      "label": "npm: start - jornada-milhas-api-main",
+      "detail": "nest start"
     }
   ]
 }
